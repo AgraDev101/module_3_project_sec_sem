@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style4.css" />
+    <title>BMI Calculator App</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div style="margin-left: 50px;" class="container-fluid">
+          <a class="navbar-brand h1" href="#">BMI Calculator App</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div style="margin-right: 50px;" class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Measurement
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Metric</a></li>
+              <li><a class="dropdown-item" href="#">SI Units</a></li>
+            </ul>
+          </div>
+      </nav>
+      <section style="max-width: 50%; margin: 100px auto;">
+            <h1>ENTER YOUR AGE</h1>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Age</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <h1>ENTER YOUR HEIGHT</h1>
+            <div style="display: flex; justify-content: space-between;" class="input-group mb-3">
+                <div>
+                    <span class="input-group-text" id="inputGroup-sizing-default">Height in Feet</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <div>
+                    <span class="input-group-text" id="inputGroup-sizing-default">Height in CM</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+            </div>
+            <h1>ENTER YOUR WEIGHT</h1>
+            <div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Weight in Pounds</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Weight in Kilograms</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+            </div>
+      </section>
+      <div style="max-width: 50%; margin: auto;" class="d-grid gap-2">
+        <button class="btn btn-primary" type="button">Submit your data</button>
+      </div>
+      <div style="max-width: 50%; margin: 50px auto;">
+        <h1>Results</h1>
+        <h2>YOUR BMI SCORE IS 24</h2>
+      </div>
+      <section style="max-width: 50%; margin: 50px auto;">
+        <h1>BMI Scale</h1>
+        <table class="table border border-5">
+            <thead class="table-dark">
+              <tr>
+                <th style="text-align: center;" scope="col">BMI Score</th>
+                <th style="text-align: center;" scope="col">Category</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="text-align: center;">
+                <td style="background-color: #ffe189;">>= 18.4</td>
+                <td>Underweight</td>
+              </tr>
+              <tr style="text-align: center;">
+                <td style="background-color: #8cd47e;">18.5 - 24.9</td>
+                <td>Normal</td>
+              </tr>
+              <tr style="text-align: center;">
+                <td style="background-color: #ffb54c;">25 - 39.9</td>
+                <td>Owerweight</td>
+              </tr>
+              <tr style="text-align: center;">
+                <td style="background-color: #ff6861;">>= 40</td>
+                <td>Obese</td>
+              </tr>
+            </tbody>
+          </table>
+      </section>
+      <section style="background-color: black;">
+        <h4 class="text-center" style="color: white; padding: 10px;">xyz company. copyright@2024</h4>
+      </section>
+</body>
+</html>
